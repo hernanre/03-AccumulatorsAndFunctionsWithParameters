@@ -142,11 +142,12 @@ def draw_circles2(n):
     for k in range(n):
 
         center = rg.Point(50 + (k * 20), 100)
-        circle = rg.Circle(center, 10)
+        radius = 10
+        circle = rg.Circle(center, radius)
         circle.fill_color = 'blue'
         circle.attach_to(window)
 
-    window.render()
+        window.render()
     window.close_on_mouse_click()
 
 def print_sequence3(n):
