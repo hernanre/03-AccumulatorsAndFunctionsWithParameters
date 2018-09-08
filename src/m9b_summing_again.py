@@ -93,9 +93,19 @@ def run_test_sum_powers_in_range():
     print('--------------------------------------------------')
 
 # Test 1
-    expected = 2
+    expected = 50
     answer = sum_powers_in_range(3, 5, 2)
-    print('Test 3 expected:', expected)
+    print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
+
+    expected = 142.384776
+    answer = sum_powers_in_range(3, 100, 0.1)
+    print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
+
+    expected = 38
+    answer = sum_powers_in_range(8, 11, 1)
+    print('Test 1 expected:', expected)
     print('       actual:  ', answer)
 
 
@@ -112,8 +122,9 @@ def sum_powers_in_range(m, n, p):
       -- sum_powers_in_range(3, 100, 0.1) returns about 142.384776
     """
     total = 0
-    for k in range(n - m):
-        total = total + ((m + k)**p)
+    for k in range((n - m) + 1):
+        print(k)
+        total = total + ((k+m)**p)
 
     return total
 
