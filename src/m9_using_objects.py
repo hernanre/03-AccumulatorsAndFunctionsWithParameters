@@ -18,6 +18,7 @@ def main():
     circle_and_rectangle()
     lines()
 
+
 def two_circles():
     """
     -- Constructs an rg.RoseWindow.
@@ -48,6 +49,7 @@ def two_circles():
 
     window.render()
     window.close_on_mouse_click()
+
 
 def circle_and_rectangle():
     """
@@ -86,7 +88,7 @@ def circle_and_rectangle():
 
     x = 500
     y = 400
-    center = rg.Point (x, y)
+    center = rg.Point(x, y)
     radius = 90
 
     circle = rg.Circle(center, radius)
@@ -115,7 +117,6 @@ def circle_and_rectangle():
     print(rectangle.get_center())
     print(rectangle.get_center().x)
     print(rectangle.get_center().y)
-
 
     # ------------------------------------------------------------------
     # DONE: 3. Implement this function, per its green doc-string above.
@@ -157,11 +158,11 @@ def lines():
     window = rg.RoseWindow(width, length)
 
     start_1 = rg.Point(100, 500)
-    end_1 = rg. Point (300, 100)
+    end_1 = rg. Point(300, 100)
 
     line_1 = rg.Line(start_1, end_1)
 
-    start_2 = rg.Point (400, 500)
+    start_2 = rg.Point(400, 500)
     end_2 = rg.Point(600, 10)
 
     line_2 = rg.Line(start_2, end_2)

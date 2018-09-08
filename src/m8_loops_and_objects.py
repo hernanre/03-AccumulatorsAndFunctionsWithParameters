@@ -54,7 +54,6 @@ def print_sequence1(n):
 
 def draw_circles1():
 
-
     """
     -- Constructs an rg.RoseWindow whose width and height are both 400.
     -- Constructs and draws 21 rg.Circle objects such that:
@@ -73,15 +72,13 @@ def draw_circles1():
     print('Running draw_circles1:  See graphics window')
     print('--------------------------------------------------')
 
-
     width = 400
     height = 400
     window = rg.RoseWindow(width, height)
 
+    n = 21
 
-    n = 22
-
-    for k in range(n):
+    for k in range(n + 1):
         center_of_circle = rg.Point(200, 200)
         radius = (k * 10)
         circle = rg.Circle(center_of_circle, radius)
@@ -89,6 +86,7 @@ def draw_circles1():
 
     window.render()
     window.close_on_mouse_click()
+
 
 def print_sequence2():
     """
@@ -110,7 +108,6 @@ def print_sequence2():
     print('--------------------------------------------------')
     print('Running print_sequence2:')
     print('--------------------------------------------------')
-
 
     for k in range(18):
         print(10 * (2 * k + 5))
@@ -150,6 +147,7 @@ def draw_circles2(n):
         window.render()
     window.close_on_mouse_click()
 
+
 def print_sequence3(n):
     """
     Prints:
@@ -171,6 +169,7 @@ def print_sequence3(n):
     print('--------------------------------------------------')
     for k in range(n + 1):
         print(k + 1)
+
 
 def draw_circles3(n):
     """
@@ -239,6 +238,7 @@ def print_cosines(n):
     print('--------------------------------------------------')
     for k in range(n):
         print(80 * math.cos(k))
+
 
 def draw_cosines_and_sines(n):
     """
