@@ -13,8 +13,6 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Mark Hays, Amanda Stouder,
 import m4t_tester
 
 
-
-
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_sum_of_digits()
@@ -342,5 +340,3 @@ def fancy_sums_of_digits(n):
 
 if __name__ == '__main__':
     main()
-
-
